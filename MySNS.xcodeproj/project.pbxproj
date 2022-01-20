@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3CCC6761E0DCF1AE96AB802A /* Pods_MySNS_MySNSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B648A26FBFAF61415F209242 /* Pods_MySNS_MySNSUITests.framework */; };
 		8317D40E27900366004E8503 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8317D40D27900366004E8503 /* AppDelegate.swift */; };
 		8317D41027900366004E8503 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8317D40F27900366004E8503 /* SceneDelegate.swift */; };
 		8317D41227900366004E8503 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8317D41127900366004E8503 /* ViewController.swift */; };
@@ -16,6 +17,31 @@
 		8317D42527900367004E8503 /* MySNSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8317D42427900367004E8503 /* MySNSTests.swift */; };
 		8317D42F27900367004E8503 /* MySNSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8317D42E27900367004E8503 /* MySNSUITests.swift */; };
 		8317D43127900367004E8503 /* MySNSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8317D43027900367004E8503 /* MySNSUITestsLaunchTests.swift */; };
+		8317D4442790047B004E8503 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8317D4432790047B004E8503 /* MainTabController.swift */; };
+		8317D446279005B7004E8503 /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8317D445279005B7004E8503 /* FeedController.swift */; };
+		8317D448279005BF004E8503 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8317D447279005BF004E8503 /* SearchController.swift */; };
+		8317D44A279005CD004E8503 /* ImageSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8317D449279005CD004E8503 /* ImageSelectorController.swift */; };
+		8317D44C279005D7004E8503 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8317D44B279005D7004E8503 /* NotificationController.swift */; };
+		8317D44E279005E0004E8503 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8317D44D279005E0004E8503 /* ProfileController.swift */; };
+		8318111B2790EB37009ECCE2 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8318111A2790EB37009ECCE2 /* FeedCell.swift */; };
+		8318111D2790EC53009ECCE2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8318111C2790EC53009ECCE2 /* Extensions.swift */; };
+		8344822A2794151200061F56 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834482292794151200061F56 /* LoginController.swift */; };
+		8344822C2794152300061F56 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8344822B2794152300061F56 /* RegistrationController.swift */; };
+		839DEE2A279689CC00BEFF31 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839DEE29279689CC00BEFF31 /* ProfileCell.swift */; };
+		839DEE2D279689EE00BEFF31 /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839DEE2C279689EE00BEFF31 /* ProfileHeader.swift */; };
+		839DEE2F2796B97E00BEFF31 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839DEE2E2796B97E00BEFF31 /* UserService.swift */; };
+		839DEE312796B9B500BEFF31 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839DEE302796B9B500BEFF31 /* Constants.swift */; };
+		839DEE332796BC4D00BEFF31 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839DEE322796BC4C00BEFF31 /* User.swift */; };
+		839DEE352796D9AB00BEFF31 /* ProfileHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839DEE342796D9AB00BEFF31 /* ProfileHeaderViewModel.swift */; };
+		83AFF4472798EE98001CBC85 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AFF4462798EE98001CBC85 /* UserCell.swift */; };
+		83AFF44927991DAD001CBC85 /* UserCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AFF44827991DAD001CBC85 /* UserCellViewModel.swift */; };
+		83CF8F522794F0720041DEFA /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CF8F512794F0720041DEFA /* CustomTextField.swift */; };
+		83CF8F54279510C40041DEFA /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CF8F53279510C40041DEFA /* AuthenticationViewModel.swift */; };
+		83EE268927954F8C00BB77B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83EE268827954F8C00BB77B4 /* GoogleService-Info.plist */; };
+		83EE268B27955D9500BB77B4 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE268A27955D9500BB77B4 /* ImageUploader.swift */; };
+		83EE268D27955DA000BB77B4 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE268C27955DA000BB77B4 /* AuthService.swift */; };
+		940B9A477467DDA66CE00DB5 /* Pods_MySNSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5165E9984712176993BE22D7 /* Pods_MySNSTests.framework */; };
+		9D202F355EC71DED0F23F831 /* Pods_MySNS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CC378F6FEDB6F3A806E26AA /* Pods_MySNS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +62,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D5B00EB1A7106087BA312ED /* Pods-MySNS-MySNSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySNS-MySNSUITests.debug.xcconfig"; path = "Target Support Files/Pods-MySNS-MySNSUITests/Pods-MySNS-MySNSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		25E89B030C579251CD1E0436 /* Pods-MySNS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySNS.debug.xcconfig"; path = "Target Support Files/Pods-MySNS/Pods-MySNS.debug.xcconfig"; sourceTree = "<group>"; };
+		4E960F127013C913C57A8948 /* Pods-MySNS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySNS.release.xcconfig"; path = "Target Support Files/Pods-MySNS/Pods-MySNS.release.xcconfig"; sourceTree = "<group>"; };
+		5165E9984712176993BE22D7 /* Pods_MySNSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySNSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		529DDC7931AF532E13E38362 /* Pods-MySNS-MySNSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySNS-MySNSUITests.release.xcconfig"; path = "Target Support Files/Pods-MySNS-MySNSUITests/Pods-MySNS-MySNSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6EF3E119AABF33A53E38554D /* Pods-MySNSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySNSTests.release.xcconfig"; path = "Target Support Files/Pods-MySNSTests/Pods-MySNSTests.release.xcconfig"; sourceTree = "<group>"; };
+		7D540169E70B163738D20744 /* Pods-MySNSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySNSTests.debug.xcconfig"; path = "Target Support Files/Pods-MySNSTests/Pods-MySNSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8317D40A27900366004E8503 /* MySNS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySNS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8317D40D27900366004E8503 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8317D40F27900366004E8503 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +82,32 @@
 		8317D42A27900367004E8503 /* MySNSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySNSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8317D42E27900367004E8503 /* MySNSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySNSUITests.swift; sourceTree = "<group>"; };
 		8317D43027900367004E8503 /* MySNSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySNSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8317D4432790047B004E8503 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		8317D445279005B7004E8503 /* FeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
+		8317D447279005BF004E8503 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		8317D449279005CD004E8503 /* ImageSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectorController.swift; sourceTree = "<group>"; };
+		8317D44B279005D7004E8503 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		8317D44D279005E0004E8503 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		8318111A2790EB37009ECCE2 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		8318111C2790EC53009ECCE2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		834482292794151200061F56 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		8344822B2794152300061F56 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
+		839DEE29279689CC00BEFF31 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		839DEE2C279689EE00BEFF31 /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
+		839DEE2E2796B97E00BEFF31 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		839DEE302796B9B500BEFF31 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		839DEE322796BC4C00BEFF31 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		839DEE342796D9AB00BEFF31 /* ProfileHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderViewModel.swift; sourceTree = "<group>"; };
+		83AFF4462798EE98001CBC85 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		83AFF44827991DAD001CBC85 /* UserCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellViewModel.swift; sourceTree = "<group>"; };
+		83AFF44A27997279001CBC85 /* 중요노트.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "중요노트.md"; sourceTree = "<group>"; };
+		83CF8F512794F0720041DEFA /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		83CF8F53279510C40041DEFA /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		83EE268827954F8C00BB77B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		83EE268A27955D9500BB77B4 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
+		83EE268C27955DA000BB77B4 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		9CC378F6FEDB6F3A806E26AA /* Pods_MySNS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySNS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B648A26FBFAF61415F209242 /* Pods_MySNS_MySNSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySNS_MySNSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D202F355EC71DED0F23F831 /* Pods_MySNS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				940B9A477467DDA66CE00DB5 /* Pods_MySNSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CCC6761E0DCF1AE96AB802A /* Pods_MySNS_MySNSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +145,8 @@
 				8317D42327900367004E8503 /* MySNSTests */,
 				8317D42D27900367004E8503 /* MySNSUITests */,
 				8317D40B27900366004E8503 /* Products */,
+				CE067AE3E2A3FB2679A96D70 /* Pods */,
+				D07ACB5A9C11A182FBABECD8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +163,13 @@
 		8317D40C27900366004E8503 /* MySNS */ = {
 			isa = PBXGroup;
 			children = (
+				83EE268827954F8C00BB77B4 /* GoogleService-Info.plist */,
+				8317D44227900400004E8503 /* Utility */,
+				8317D441279003FD004E8503 /* API */,
+				8317D440279003F5004E8503 /* Controller */,
+				8317D43F279003EF004E8503 /* ViewModel */,
+				8317D43E279003B7004E8503 /* Model */,
+				8317D43D27900397004E8503 /* View */,
 				8317D40D27900366004E8503 /* AppDelegate.swift */,
 				8317D40F27900366004E8503 /* SceneDelegate.swift */,
 				8317D41127900366004E8503 /* ViewController.swift */,
@@ -106,6 +177,7 @@
 				8317D41627900367004E8503 /* Assets.xcassets */,
 				8317D41827900367004E8503 /* LaunchScreen.storyboard */,
 				8317D41B27900367004E8503 /* Info.plist */,
+				83AFF44A27997279001CBC85 /* 중요노트.md */,
 			);
 			path = MySNS;
 			sourceTree = "<group>";
@@ -127,6 +199,109 @@
 			path = MySNSUITests;
 			sourceTree = "<group>";
 		};
+		8317D43D27900397004E8503 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				839DEE2B279689E100BEFF31 /* Profile */,
+				8318111A2790EB37009ECCE2 /* FeedCell.swift */,
+				83CF8F512794F0720041DEFA /* CustomTextField.swift */,
+				83AFF4462798EE98001CBC85 /* UserCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8317D43E279003B7004E8503 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				839DEE322796BC4C00BEFF31 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8317D43F279003EF004E8503 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				83CF8F53279510C40041DEFA /* AuthenticationViewModel.swift */,
+				839DEE342796D9AB00BEFF31 /* ProfileHeaderViewModel.swift */,
+				83AFF44827991DAD001CBC85 /* UserCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8317D440279003F5004E8503 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				83448228279414F100061F56 /* Authentications */,
+				8317D4432790047B004E8503 /* MainTabController.swift */,
+				8317D445279005B7004E8503 /* FeedController.swift */,
+				8317D447279005BF004E8503 /* SearchController.swift */,
+				8317D449279005CD004E8503 /* ImageSelectorController.swift */,
+				8317D44B279005D7004E8503 /* NotificationController.swift */,
+				8317D44D279005E0004E8503 /* ProfileController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8317D441279003FD004E8503 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				83EE268A27955D9500BB77B4 /* ImageUploader.swift */,
+				83EE268C27955DA000BB77B4 /* AuthService.swift */,
+				839DEE2E2796B97E00BEFF31 /* UserService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		8317D44227900400004E8503 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				8318111C2790EC53009ECCE2 /* Extensions.swift */,
+				839DEE302796B9B500BEFF31 /* Constants.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		83448228279414F100061F56 /* Authentications */ = {
+			isa = PBXGroup;
+			children = (
+				834482292794151200061F56 /* LoginController.swift */,
+				8344822B2794152300061F56 /* RegistrationController.swift */,
+			);
+			path = Authentications;
+			sourceTree = "<group>";
+		};
+		839DEE2B279689E100BEFF31 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				839DEE29279689CC00BEFF31 /* ProfileCell.swift */,
+				839DEE2C279689EE00BEFF31 /* ProfileHeader.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		CE067AE3E2A3FB2679A96D70 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25E89B030C579251CD1E0436 /* Pods-MySNS.debug.xcconfig */,
+				4E960F127013C913C57A8948 /* Pods-MySNS.release.xcconfig */,
+				0D5B00EB1A7106087BA312ED /* Pods-MySNS-MySNSUITests.debug.xcconfig */,
+				529DDC7931AF532E13E38362 /* Pods-MySNS-MySNSUITests.release.xcconfig */,
+				7D540169E70B163738D20744 /* Pods-MySNSTests.debug.xcconfig */,
+				6EF3E119AABF33A53E38554D /* Pods-MySNSTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D07ACB5A9C11A182FBABECD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CC378F6FEDB6F3A806E26AA /* Pods_MySNS.framework */,
+				B648A26FBFAF61415F209242 /* Pods_MySNS_MySNSUITests.framework */,
+				5165E9984712176993BE22D7 /* Pods_MySNSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +309,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8317D43427900367004E8503 /* Build configuration list for PBXNativeTarget "MySNS" */;
 			buildPhases = (
+				7A35D08D3D6460738FA31382 /* [CP] Check Pods Manifest.lock */,
 				8317D40627900366004E8503 /* Sources */,
 				8317D40727900366004E8503 /* Frameworks */,
 				8317D40827900366004E8503 /* Resources */,
+				0E153486B04FC4059AAAB114 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +328,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8317D43727900367004E8503 /* Build configuration list for PBXNativeTarget "MySNSTests" */;
 			buildPhases = (
+				16641604273B2037BCB9B0F9 /* [CP] Check Pods Manifest.lock */,
 				8317D41C27900367004E8503 /* Sources */,
 				8317D41D27900367004E8503 /* Frameworks */,
 				8317D41E27900367004E8503 /* Resources */,
@@ -169,9 +347,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8317D43A27900367004E8503 /* Build configuration list for PBXNativeTarget "MySNSUITests" */;
 			buildPhases = (
+				8AE1222A97AF960186061D1F /* [CP] Check Pods Manifest.lock */,
 				8317D42627900367004E8503 /* Sources */,
 				8317D42727900367004E8503 /* Frameworks */,
 				8317D42827900367004E8503 /* Resources */,
+				9930C5D5BB73D03775D3B491 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8317D41A27900367004E8503 /* LaunchScreen.storyboard in Resources */,
+				83EE268927954F8C00BB77B4 /* GoogleService-Info.plist in Resources */,
 				8317D41727900367004E8503 /* Assets.xcassets in Resources */,
 				8317D41527900366004E8503 /* Main.storyboard in Resources */,
 			);
@@ -253,14 +434,139 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0E153486B04FC4059AAAB114 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MySNS/Pods-MySNS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MySNS/Pods-MySNS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MySNS/Pods-MySNS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		16641604273B2037BCB9B0F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MySNSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A35D08D3D6460738FA31382 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MySNS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AE1222A97AF960186061D1F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MySNS-MySNSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9930C5D5BB73D03775D3B491 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MySNS-MySNSUITests/Pods-MySNS-MySNSUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MySNS-MySNSUITests/Pods-MySNS-MySNSUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MySNS-MySNSUITests/Pods-MySNS-MySNSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8317D40627900366004E8503 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83CF8F522794F0720041DEFA /* CustomTextField.swift in Sources */,
+				839DEE2D279689EE00BEFF31 /* ProfileHeader.swift in Sources */,
 				8317D41227900366004E8503 /* ViewController.swift in Sources */,
+				8344822A2794151200061F56 /* LoginController.swift in Sources */,
+				8318111B2790EB37009ECCE2 /* FeedCell.swift in Sources */,
+				8317D44A279005CD004E8503 /* ImageSelectorController.swift in Sources */,
+				8317D44C279005D7004E8503 /* NotificationController.swift in Sources */,
+				83CF8F54279510C40041DEFA /* AuthenticationViewModel.swift in Sources */,
+				83AFF4472798EE98001CBC85 /* UserCell.swift in Sources */,
+				8317D448279005BF004E8503 /* SearchController.swift in Sources */,
 				8317D40E27900366004E8503 /* AppDelegate.swift in Sources */,
+				839DEE332796BC4D00BEFF31 /* User.swift in Sources */,
+				8317D44E279005E0004E8503 /* ProfileController.swift in Sources */,
+				839DEE352796D9AB00BEFF31 /* ProfileHeaderViewModel.swift in Sources */,
+				839DEE312796B9B500BEFF31 /* Constants.swift in Sources */,
+				8317D446279005B7004E8503 /* FeedController.swift in Sources */,
+				83AFF44927991DAD001CBC85 /* UserCellViewModel.swift in Sources */,
+				8317D4442790047B004E8503 /* MainTabController.swift in Sources */,
+				8318111D2790EC53009ECCE2 /* Extensions.swift in Sources */,
+				83EE268B27955D9500BB77B4 /* ImageUploader.swift in Sources */,
+				83EE268D27955DA000BB77B4 /* AuthService.swift in Sources */,
+				839DEE2F2796B97E00BEFF31 /* UserService.swift in Sources */,
+				839DEE2A279689CC00BEFF31 /* ProfileCell.swift in Sources */,
 				8317D41027900366004E8503 /* SceneDelegate.swift in Sources */,
+				8344822C2794152300061F56 /* RegistrationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +740,7 @@
 		};
 		8317D43527900367004E8503 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25E89B030C579251CD1E0436 /* Pods-MySNS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -462,6 +769,7 @@
 		};
 		8317D43627900367004E8503 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E960F127013C913C57A8948 /* Pods-MySNS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -490,6 +798,7 @@
 		};
 		8317D43827900367004E8503 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D540169E70B163738D20744 /* Pods-MySNSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +819,7 @@
 		};
 		8317D43927900367004E8503 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EF3E119AABF33A53E38554D /* Pods-MySNSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -530,6 +840,7 @@
 		};
 		8317D43B27900367004E8503 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D5B00EB1A7106087BA312ED /* Pods-MySNS-MySNSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -548,6 +859,7 @@
 		};
 		8317D43C27900367004E8503 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 529DDC7931AF532E13E38362 /* Pods-MySNS-MySNSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
