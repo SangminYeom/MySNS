@@ -11,11 +11,18 @@ import Firebase
 private let reuseIdentifier = "cell"
 class FeedController: UICollectionViewController {
     
+    // MARK: - properties
+    private var posts = [Post]()
+    
+    // profile controller에서 이미지 선택했을 때 단일 post 설정
+    var post: Post?
+    
+    // MARK: - lifecycles
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configureUI()
-        
+        fetchPosts()
     }
     
     // MARK: - actions
@@ -35,18 +42,41 @@ class FeedController: UICollectionViewController {
         }
     }
     
+    @objc func handleRefresh() {
+        posts.removeAll()
+        fetchPosts()
+    }
+    
+    // MARK: - apis
+    func fetchPosts() {
+        
+        guard post == nil else { return }
+        
+        PostService.fetchPosts { posts in
+            self.posts = posts
+            self.collectionView.refreshControl?.endRefreshing()
+            self.collectionView.reloadData()
+        }
+    }
+    
     // MARK: - helpers
     func configureUI() {
         collectionView.backgroundColor = .white
         
         collectionView.register(FeedCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Logout",
-                                                            style: UIBarButtonItem.Style.plain,
-                                                            target: self,
-                                                            action: #selector(handleLogout))
+        if post == nil {
+            navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Logout",
+                                                               style: UIBarButtonItem.Style.plain,
+                                                               target: self,
+                                                               action: #selector(handleLogout))
+        }
         
         navigationItem.title = "Feed"
+        
+        let refresher = UIRefreshControl()
+        refresher.addTarget(self, action: #selector(handleRefresh), for: UIControl.Event.valueChanged)
+        collectionView.refreshControl = refresher
     }
 }
 
@@ -54,11 +84,18 @@ class FeedController: UICollectionViewController {
 
 extension FeedController {
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return post == nil ? self.posts.count : 1
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! FeedCell
+        
+        if let post = post {
+            cell.viewModel = PostViewModel(post: post)
+        } else {
+            cell.viewModel = PostViewModel(post: posts[indexPath.row])
+        }
+        
         return cell
     }
 }
