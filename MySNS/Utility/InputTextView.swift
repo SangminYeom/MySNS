@@ -16,18 +16,29 @@ class InputTextView: UITextView {
         }
     }
     
-    private let placeholderLabel: UILabel = {
+    let placeholderLabel: UILabel = {
         let label = UILabel()
         label.textColor = .lightGray
         return label
     }()
+    
+    var placeholderShouldCenter = true {
+        didSet {
+            if placeholderShouldCenter {
+                placeholderLabel.centerY(inView: self)
+                placeholderLabel.anchor(left: self.leftAnchor, right: self.rightAnchor, paddingLeft: 8)
+            } else {
+                placeholderLabel.anchor(top: self.topAnchor, left: self.leftAnchor, paddingTop: 8,
+                                        paddingLeft: 5)
+            }
+        }
+    }
     
     // MARK: - lifecycles
     override init(frame: CGRect, textContainer: NSTextContainer?) {
         super.init(frame: frame, textContainer: textContainer)
         
         addSubview(placeholderLabel)
-        placeholderLabel.anchor(top: self.topAnchor, left: self.leftAnchor, paddingTop: 4, paddingLeft: 5)
         
         NotificationCenter.default.addObserver(self, selector: #selector(handleTextDidChange), name: UITextView.textDidChangeNotification, object: nil)
     }

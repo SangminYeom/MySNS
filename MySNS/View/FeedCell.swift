@@ -7,6 +7,11 @@
 
 import UIKit
 
+// feedcontroller에서 commentcontroller 띄우기 위한 delegate
+protocol FeedCellDelegate : AnyObject {
+    func cell(_ cell: FeedCell, wantsToShowCommentsFor post:Post)
+}
+
 class FeedCell: UICollectionViewCell {
     
     // MARK: - Properties
@@ -15,6 +20,9 @@ class FeedCell: UICollectionViewCell {
             configure()
         }
     }
+    
+    weak var delegate : FeedCellDelegate?
+    
     private let profileImageView: UIImageView = {
         let iv = UIImageView()
         iv.contentMode = .scaleAspectFill
@@ -51,6 +59,7 @@ class FeedCell: UICollectionViewCell {
         let button = UIButton(type: .system)
         button.setImage(UIImage(named: "comment"), for: UIControl.State.normal)
         button.tintColor = UIColor.black
+        button.addTarget(self, action: #selector(didTapComments), for: UIControl.Event.touchUpInside)
         return button
     }()
     
@@ -118,6 +127,13 @@ class FeedCell: UICollectionViewCell {
     // MARK: - actinos
     @objc func didTapUsername() {
         print("DEBUG: did tap username")
+    }
+    
+    @objc func didTapComments() {
+        guard let viewModel = viewModel else { return }
+        
+        // feedcontroller에서 commentcontroller 띄움.
+        delegate?.cell(self, wantsToShowCommentsFor: viewModel.post)
     }
     
     // MARK: - helpers

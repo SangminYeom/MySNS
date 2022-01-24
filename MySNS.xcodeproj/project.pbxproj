@@ -38,6 +38,9 @@
 		839DEE352796D9AB00BEFF31 /* ProfileHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839DEE342796D9AB00BEFF31 /* ProfileHeaderViewModel.swift */; };
 		83ADA6C0279E2C39007242F7 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ADA6BF279E2C39007242F7 /* Post.swift */; };
 		83ADA6C2279E3BE6007242F7 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ADA6C1279E3BE6007242F7 /* PostViewModel.swift */; };
+		83ADA6C4279E93F2007242F7 /* CommentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ADA6C3279E93F2007242F7 /* CommentController.swift */; };
+		83ADA6C6279E954B007242F7 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ADA6C5279E954B007242F7 /* CommentCell.swift */; };
+		83ADA6C8279EBC43007242F7 /* CommentInputAccesoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ADA6C7279EBC43007242F7 /* CommentInputAccesoryView.swift */; };
 		83AFF4472798EE98001CBC85 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AFF4462798EE98001CBC85 /* UserCell.swift */; };
 		83AFF44927991DAD001CBC85 /* UserCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AFF44827991DAD001CBC85 /* UserCellViewModel.swift */; };
 		83CF8F522794F0720041DEFA /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CF8F512794F0720041DEFA /* CustomTextField.swift */; };
@@ -108,6 +111,9 @@
 		839DEE342796D9AB00BEFF31 /* ProfileHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderViewModel.swift; sourceTree = "<group>"; };
 		83ADA6BF279E2C39007242F7 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		83ADA6C1279E3BE6007242F7 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		83ADA6C3279E93F2007242F7 /* CommentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentController.swift; sourceTree = "<group>"; };
+		83ADA6C5279E954B007242F7 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		83ADA6C7279EBC43007242F7 /* CommentInputAccesoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentInputAccesoryView.swift; sourceTree = "<group>"; };
 		83AFF4462798EE98001CBC85 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		83AFF44827991DAD001CBC85 /* UserCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellViewModel.swift; sourceTree = "<group>"; };
 		83AFF44A27997279001CBC85 /* 중요노트.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "중요노트.md"; sourceTree = "<group>"; };
@@ -174,12 +180,12 @@
 			isa = PBXGroup;
 			children = (
 				83EE268827954F8C00BB77B4 /* GoogleService-Info.plist */,
+				8317D43E279003B7004E8503 /* Model */,
+				8317D43F279003EF004E8503 /* ViewModel */,
+				8317D43D27900397004E8503 /* View */,
 				8317D44227900400004E8503 /* Utility */,
 				8317D441279003FD004E8503 /* API */,
 				8317D440279003F5004E8503 /* Controller */,
-				8317D43F279003EF004E8503 /* ViewModel */,
-				8317D43E279003B7004E8503 /* Model */,
-				8317D43D27900397004E8503 /* View */,
 				8317D40D27900366004E8503 /* AppDelegate.swift */,
 				8317D40F27900366004E8503 /* SceneDelegate.swift */,
 				8317D41127900366004E8503 /* ViewController.swift */,
@@ -216,6 +222,8 @@
 				8318111A2790EB37009ECCE2 /* FeedCell.swift */,
 				83CF8F512794F0720041DEFA /* CustomTextField.swift */,
 				83AFF4462798EE98001CBC85 /* UserCell.swift */,
+				83ADA6C5279E954B007242F7 /* CommentCell.swift */,
+				83ADA6C7279EBC43007242F7 /* CommentInputAccesoryView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -251,6 +259,7 @@
 				8317D44B279005D7004E8503 /* NotificationController.swift */,
 				8317D44D279005E0004E8503 /* ProfileController.swift */,
 				8359F7F0279CFD0200FC14FF /* UploadPostController.swift */,
+				83ADA6C3279E93F2007242F7 /* CommentController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -560,6 +569,7 @@
 				83ADA6C2279E3BE6007242F7 /* PostViewModel.swift in Sources */,
 				83CF8F522794F0720041DEFA /* CustomTextField.swift in Sources */,
 				839DEE2D279689EE00BEFF31 /* ProfileHeader.swift in Sources */,
+				83ADA6C4279E93F2007242F7 /* CommentController.swift in Sources */,
 				8359F7F1279CFD0200FC14FF /* UploadPostController.swift in Sources */,
 				8317D41227900366004E8503 /* ViewController.swift in Sources */,
 				8344822A2794151200061F56 /* LoginController.swift in Sources */,
@@ -582,11 +592,13 @@
 				83EE268B27955D9500BB77B4 /* ImageUploader.swift in Sources */,
 				83ADA6C0279E2C39007242F7 /* Post.swift in Sources */,
 				83EE268D27955DA000BB77B4 /* AuthService.swift in Sources */,
+				83ADA6C8279EBC43007242F7 /* CommentInputAccesoryView.swift in Sources */,
 				8359F7F5279D235700FC14FF /* PostService.swift in Sources */,
 				839DEE2F2796B97E00BEFF31 /* UserService.swift in Sources */,
 				839DEE2A279689CC00BEFF31 /* ProfileCell.swift in Sources */,
 				8317D41027900366004E8503 /* SceneDelegate.swift in Sources */,
 				8344822C2794152300061F56 /* RegistrationController.swift in Sources */,
+				83ADA6C6279E954B007242F7 /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

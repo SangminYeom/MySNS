@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import CoreMedia
 
 struct PostService {
     static func uploadPost(caption: String, image: UIImage, user:User,
@@ -39,13 +40,17 @@ struct PostService {
     }
     
     static func fetchPosts(forUser uid: String, completion: @escaping ([Post]) -> Void) {
-        let query  = COLLECTION_POSTS.whereField("ownerUid", isEqualTo: uid).order(by: "timestamp", descending: true)
+        let query  = COLLECTION_POSTS.whereField("ownerUid", isEqualTo: uid)
         
         query.getDocuments { snapshot, error in
 
             guard let documents = snapshot?.documents else { return }
             
-            let posts = documents.map({ Post(postId: $0.documentID, dictionary: $0.data()) })
+            var posts = documents.map({ Post(postId: $0.documentID, dictionary: $0.data()) })
+            
+            posts.sort { (post1, post2) -> Bool in
+                return post1.timestamp.seconds > post2.timestamp.seconds
+            }
             
             completion(posts)
         }

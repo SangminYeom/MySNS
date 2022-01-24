@@ -34,7 +34,7 @@ class UploadPostController: UIViewController {
         let tv = InputTextView()
         tv.placeholderText = "Enter caption.."
         tv.font = UIFont.systemFont(ofSize: 16)
-        
+        tv.placeholderShouldCenter = false
         // textview delegate 설정
         tv.delegate = self
         
