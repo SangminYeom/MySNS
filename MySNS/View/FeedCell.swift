@@ -10,6 +10,7 @@ import UIKit
 // feedcontroller에서 commentcontroller 띄우기 위한 delegate
 protocol FeedCellDelegate : AnyObject {
     func cell(_ cell: FeedCell, wantsToShowCommentsFor post:Post)
+    func cell(_ cell: FeedCell, didLike post:Post)
 }
 
 class FeedCell: UICollectionViewCell {
@@ -48,10 +49,11 @@ class FeedCell: UICollectionViewCell {
         return iv
     }()
     
-    private lazy var likeButton: UIButton = {
+    lazy var likeButton: UIButton = {
         let button = UIButton(type: .system)
         button.setImage(UIImage(named: "like_unselected"), for: UIControl.State.normal)
         button.tintColor = UIColor.black
+        button.addTarget(self, action: #selector(didTapLike), for: UIControl.Event.touchUpInside)
         return button
     }()
     
@@ -136,6 +138,13 @@ class FeedCell: UICollectionViewCell {
         delegate?.cell(self, wantsToShowCommentsFor: viewModel.post)
     }
     
+    @objc func didTapLike() {
+        guard let viewModel = viewModel else { return }
+
+        // feedController에서 delegate 수행
+        delegate?.cell(self, didLike: viewModel.post)
+    }
+    
     // MARK: - helpers
     func configure() {
         guard let viewModel = viewModel else {
@@ -148,6 +157,9 @@ class FeedCell: UICollectionViewCell {
         usernameButton.setTitle(viewModel.username, for: .normal)
         
         likesLabel.text = viewModel.likesLabelText
+        
+        likeButton.tintColor = viewModel.likeButtonTintColor
+        likeButton.setImage(viewModel.likeButtonImage, for: .normal)
         
     }
     
